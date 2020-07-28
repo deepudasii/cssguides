@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Tabs using Radio</title>
+    <style>
+        .tabs {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .tabs input[type="radio"]{
+            display: none;
+        }
+        .tabs input[type="radio"]:checked+label{
+            border-bottom-color:green;
+            color: #000;
+        }
+        .tabs label{
+            border-bottom: 2px solid transparent;
+            padding: 10px;
+            cursor: pointer;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li>
+            <input type="radio" id="rad-1" name="tab_radio" checked />
+            <label for="rad-1">Tab 1</label>
+        </li>
+        <li>
+            <input type="radio" id="rad-2" name="tab_radio" />
+            <label for="rad-2">Tab 2</label>
+        </li>
+        <li>
+            <input type="radio" id="rad-3" name="tab_radio" />
+            <label for="rad-3">Tab 3</label>
+        </li>
+        <li>
+            <input type="radio" id="rad-4" name="tab_radio" />
+            <label for="rad-4">Tab 4</label>
+        </li>
+    </ul>
+</body>
+</html>
